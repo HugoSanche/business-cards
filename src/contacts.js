@@ -1,5 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom/client";
 
 const contacts =
 
@@ -22,6 +22,13 @@ const contacts =
     name: "Chuck Norris",
     imgURL:
       "https://i.pinimg.com/originals/e3/94/47/e39447de921955826b1e498ccf9a39af.png",
+    phone: "+918 372 574",
+    email: "gmail@chucknorris.com"
+  },
+  {
+    name: "Hugo Baltazar",
+    imgURL:
+      "https://www.goldenglobes.com/sites/default/files/styles/portrait_medium/public/gallery_images/pitt-062614-.jpg",
     phone: "+918 372 574",
     email: "gmail@chucknorris.com"
   }

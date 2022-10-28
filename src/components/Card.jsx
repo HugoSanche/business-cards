@@ -1,5 +1,6 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import Avatar from "./Avatar";
+import Detailds from "./Detailds"
 
 function Card(props){
     return(
@@ -7,14 +8,13 @@ function Card(props){
         <div className="card">
           <div className="top">
             <h2 className="name">{props.name}</h2>
-            <img className="circle-img"
-              src={props.img}
-              alt="avatar_img"
-            />
+          
+          <Avatar img ={props.img} />
+
           </div>
           <div className="bottom">
-            <p className="info">{props.tel}</p>
-            <p className="info">{props.email}</p>
+            <Detailds detailInfo={props.tel}/>
+            <Detailds detailInfo={props.email}/>
           </div>
         </div>
     );
